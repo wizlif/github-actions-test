@@ -1,0 +1,10 @@
+name: CI
+
+on:
+  workflow_dispatch:
+jobs:
+  create-release:
+      uses: wizlif/test_git_actions/.github/workflows/send-boolean.yml@main
+      with:
+        COOL_BOOLEAN: true
+        
